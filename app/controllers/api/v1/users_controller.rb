@@ -1,5 +1,5 @@
 class Api::V1::UsersController < ApplicationController
-    before_action :set_user, only: %i[show update]
+    before_action :set_user, only: %i[show update destroy]
 
     # GET /users/1
     def show
@@ -24,6 +24,12 @@ class Api::V1::UsersController < ApplicationController
         else
             render json: @user.errors, status: :unprocessable_entity
         end
+    end
+
+    # DELETE /users/1
+    def destroy
+        @user.destroy
+        head 204
     end
 
     private
