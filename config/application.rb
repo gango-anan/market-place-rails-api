@@ -38,3 +38,9 @@ module MarketPlaceApi
     config.api_only = true
   end
 end
+
+module MarketPlaceApi 
+  class Application < Rails::Application
+    config.eager_load_paths << Rails.root.join('lib')
+  end
+end
