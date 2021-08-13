@@ -70,6 +70,8 @@ GEM
     erubi (1.10.0)
     faker (2.18.0)
       i18n (>= 1.6, < 2)
+    fast_jsonapi (1.5)
+      activesupport (>= 4.2)
     ffi (1.15.3)
     globalid (0.5.2)
       activesupport (>= 5.0)
@@ -153,6 +155,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   faker (~> 2.18)
+  fast_jsonapi (~> 1.5)
   jwt (~> 2.2)
   listen (~> 3.3)
   puma (~> 5.0)
